@@ -1,0 +1,72 @@
+body {
+	font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, sans-serif;
+	background-color: #e5e5e5;
+	font-size: 20px;
+}
+
+#main-container {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.busy {
+	display: none;
+	position: fixed;
+	background-color: #888;
+	opacity: 0.8;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: 10;
+}
+
+.busy .spinner {
+	width: 100px;
+	height: 100px;
+	opacity: 1.0;
+	top: 0; right: 0; bottom: 0; left: 0;
+	position: absolute;
+	margin: auto;
+}
+
+.busy .progress {
+	width: 200px;
+	height: 20px;
+	opacity: 1.0;
+	top: auto; right: 0; bottom: 60px; left: 0;
+	position: fixed;
+	margin: auto;
+}
+
+.messages {
+	background-color: #ccc;
+	font-size: 18px;
+}
+#auth {
+	padding: 20px;
+}
+.auth-button-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.auth-button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+#service-list {
+	width: 100%;
+}
+
+#description {
+	font-style: italic;
+	margin: 10px 0;
+}

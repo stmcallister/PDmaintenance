@@ -4,39 +4,54 @@
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>maintenance</title>
+		<title>PagerDuty Service Maintenance</title>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		
-		<link href="maintenance.css" rel="stylesheet">
+		<link href="css/maintenance.css" rel="stylesheet">
 	</head>
 	<body>
-		<div class="container-fluid" style="padding-top: 20px;">
-			<div class="row">
-				<div class="col-md-12">
-					<h1>Service Maintenance</h1>
-					<h3>Check the box to enable the service, uncheck to disable</h3>
+		<div id="main-container">
+			<div class="container-fluid" style="padding: 20px;">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>PagerDuty Service Maintenance</h1>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
+				<div class="row" id="auth">
+					<h3 style="text-align: center;">Authentication</h3>
+					<div class="auth-button-container">
+						<a id="pd-login-button" class="auth-button">
+							Authorize PagerDuty
+						</a>
+					</div>
+				</div>
+				<div id="content">
+					<div class="row">
+						<div class="col-md-12">
+							<p id="description">Check the box to enable the service, un-check to disable</p>
+						</div>
+					</div>
 					<div id="service-list"></div>
-				</div>
-				<div class="col-md-6">
 					<div id="result"></div>
+					<div class="auth-button-container">
+						<a class="auth-button" id="pd-logout-button">Disconnect PagerDuty</a>
+					</div>
+				</div>
+			</div>
+			<div id="busy">
+				<img class="spinner" src="img/spinner.gif">
+				<div class="progress">
+						<div id="progressbar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+								0%
+						</div>
 				</div>
 			</div>
 		</div>
-        <div class="busy">
-	        <img class="spinner" src="spinner.gif">
-	        <div class="progress">
-	                <div id="progressbar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-	                        0%
-	                </div>
-	        </div>
-		</div>
-
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.2/async.js"></script>
-		<script src="maintenance.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.2/async.js"></script> -->
+		<script src="js/config.js"></script>
+		<script src="js/auth.js"></script>
+		<script src="js/pdjs.js"></script>
+		<script src="js/maintenance.js"></script>
 	</body>
 </html>
