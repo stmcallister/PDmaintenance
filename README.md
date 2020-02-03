@@ -20,4 +20,7 @@ By checking and unchecking the boxes you will be enabling and disabling the corr
 
 A list of the actions you take while using the sample will appear below the list of services. There, you will also see a button that will allow you to Disconnect the sample from your PagerDuty account. 
 
-![PagerDuty Service Maintenance Action Log and Disconnect Button](img/service-maintenance.png)
+![PagerDuty Service Maintenance Action Log and Disconnect Button](img/list-actions.png)
+
+## Questions
+If you have any questions or issues with this sample please post an Issue on this repository or create a post in the [PagerDuty Developer Community](https://community.pagerduty.com/c/dev/7).
